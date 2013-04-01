@@ -18,6 +18,11 @@
 	margin: 0 auto;
 	position: relative;
 	width: 580px;
+	@include transition(height);
+	
+	&.reveal {
+		height: 580px;
+	}
 
 	li {
 		position: absolute;

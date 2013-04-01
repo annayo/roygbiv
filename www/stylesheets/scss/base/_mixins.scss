@@ -7,6 +7,17 @@
     text-shadow: white($opacity) 0 1px 0;
 }
 
+@mixin background-opacity($color, $opacity: 0.8) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+@mixin transition($property: all, $delay: 500ms, $timing-function: ease-in-out) {
+	-moz-transition: $property $delay $timing-function;
+	-webkit-transition: $property $delay $timing-function;
+	transition: $property $delay $timing-function;
+}
+
 @mixin animation-delay($delay: 0s) {
 	-moz-animation-delay: $delay;
 	-webkit-animation-delay: $delay;
