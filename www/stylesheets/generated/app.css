@@ -113,6 +113,16 @@
   25	189
   26	197
   */
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+
+    to {
+      -moz-transform: rotate(360deg);
+    }
+}
+
   @-webkit-keyframes spin {
     from {
       -webkit-transform: rotate(0deg);
@@ -123,7 +133,17 @@
     }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000315}}
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000333}}
   #rainbow {
     height: 285px;
     overflow: hidden;
@@ -134,18 +154,18 @@
     -webkit-transition: height 500ms ease-in-out;
     transition: height 500ms ease-in-out;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000341}}
   #rainbow.reveal {
     height: 580px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000345}}
   #rainbow li {
     position: absolute;
     height: 100%;
     text-indent: -9999px;
     opacity: 0.8;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000351}}
   #rainbow .ribbon {
     border-radius: 50%;
     border-style: solid;
@@ -172,12 +192,12 @@
     animation-direction: alternate;
     animation-fill-mode: forwards;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000361}}
   #rainbow .red {
     left: 0;
     top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000365}}
   #rainbow .red .ribbon {
     border-color: red;
     height: 500px;
@@ -187,12 +207,12 @@
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000374}}
   #rainbow .orange {
     left: 20px;
     top: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000378}}
   #rainbow .orange .ribbon {
     border-color: orange;
     height: 420px;
@@ -202,12 +222,12 @@
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000387}}
   #rainbow .yellow {
     left: 40px;
     top: 40px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000391}}
   #rainbow .yellow .ribbon {
     border-color: yellow;
     height: 340px;
@@ -217,12 +237,12 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003100}}
   #rainbow .green {
     left: 60px;
     top: 60px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003104}}
   #rainbow .green .ribbon {
     border-color: green;
     height: 260px;
@@ -232,12 +252,12 @@
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003113}}
   #rainbow .blue {
     left: 80px;
     top: 80px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003117}}
   #rainbow .blue .ribbon {
     border-color: blue;
     height: 180px;
@@ -247,12 +267,12 @@
     -webkit-animation-delay: 4s;
     animation-delay: 4s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003126}}
   #rainbow .indigo {
     left: 100px;
     top: 100px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003130}}
   #rainbow .indigo .ribbon {
     border-color: indigo;
     height: 100px;
@@ -262,12 +282,12 @@
     -webkit-animation-delay: 5s;
     animation-delay: 5s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003139}}
   #rainbow .violet {
     left: 120px;
     top: 120px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003143}}
   #rainbow .violet .ribbon {
     border-color: violet;
     height: 20px;
