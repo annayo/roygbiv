@@ -3,6 +3,15 @@
 //
 //
 
+@-webkit-keyframes spin { 
+	from { 
+		-webkit-transform: rotate(0deg);
+	} 
+	to { 
+		-webkit-transform: rotate(360deg);
+	} 
+}
+
 .rainbow {
 	height: 285px;
 	overflow: hidden;
@@ -23,6 +32,13 @@
 		position: absolute;
 		left: inherit;
 		top: inherit;	
+
+		-webkit-animation: spin;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-fill-mode: forwards;		
 	}
 
 	.red {
@@ -33,6 +49,8 @@
 			border-color: red; 
 			height: 500px;
 			width: 500px;
+			clip: rect(0px, 580px, 290px, 0px);
+			-webkit-animation-delay: 0s;
 		}
 	}
 
@@ -44,6 +62,8 @@
 			border-color: orange; 
 			height: 420px;
 			width: 420px;
+			clip: rect(0px, 500px, 250px, 0px);
+			-webkit-animation-delay: 1s;
 		}
 	}
 
@@ -55,6 +75,8 @@
 			border-color: yellow;
 			height: 340px;
 			width: 340px; 
+			clip: rect(0px, 420px, 210px, 0px);
+			-webkit-animation-delay: 2s;
 		}	
 	}
 
@@ -66,6 +88,8 @@
 			border-color: green; 
 			height: 260px;
 			width: 260px;
+			clip: rect(0px, 340px, 170px, 0px);
+			-webkit-animation-delay: 3s;
 		}
 	}
 
@@ -77,6 +101,8 @@
 			border-color: blue; 
 			height: 180px;
 			width: 180px;
+			clip: rect(0px, 260px, 130px, 0px);
+			-webkit-animation-delay: 4s;
 		}	
 	}
 
@@ -88,6 +114,8 @@
 			border-color: indigo; 
 			height: 100px;
 			width: 100px;
+			clip: rect(0px, 180px, 90px, 0px);
+			-webkit-animation-delay: 5s;
 		}
 	}
 
@@ -99,6 +127,8 @@
 			border-color: violet;
 			height: 20px;
 			width: 20px; 
+			clip: rect(0px, 100px, 50px, 0px);
+			-webkit-animation-delay: 6s;
 		}
 	}
 }
