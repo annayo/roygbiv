@@ -1,0 +1,104 @@
+//
+// modules: rainbow-view.scss
+//
+//
+
+.rainbow {
+	height: 285px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	width: 580px;
+
+	li {
+		position: absolute;
+	    height: 100%;
+	    text-indent: -9999px;
+		opacity: 0.8;
+	}
+	.ribbon {
+		border-radius: 50%;
+	    border-style: solid;
+	    border-width: 40px;
+		position: absolute;
+		left: inherit;
+		top: inherit;	
+	}
+
+	.red {
+		left: 0;
+		top: 0;
+
+		.ribbon { 
+			border-color: red; 
+			height: 500px;
+			width: 500px;
+		}
+	}
+
+	.orange { 
+		left: 20px;
+		top: 20px;
+
+		.ribbon {
+			border-color: orange; 
+			height: 420px;
+			width: 420px;
+		}
+	}
+
+	.yellow { 
+		left: 40px;
+		top: 40px;
+
+		.ribbon {
+			border-color: yellow;
+			height: 340px;
+			width: 340px; 
+		}	
+	}
+
+	.green { 
+		left: 60px;
+		top: 60px;
+
+		.ribbon {
+			border-color: green; 
+			height: 260px;
+			width: 260px;
+		}
+	}
+
+	.blue { 
+		left: 80px;
+		top: 80px;
+
+		.ribbon {
+			border-color: blue; 
+			height: 180px;
+			width: 180px;
+		}	
+	}
+
+	.indigo { 
+		left: 100px;
+		top: 100px;
+
+		.ribbon {
+			border-color: indigo; 
+			height: 100px;
+			width: 100px;
+		}
+	}
+
+	.violet { 
+		left: 120px;
+		top: 120px;
+
+		.ribbon {
+			border-color: violet;
+			height: 20px;
+			width: 20px; 
+		}
+	}
+}
