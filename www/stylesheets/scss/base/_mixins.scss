@@ -3,47 +3,36 @@
 //
 //
 
-// Settings
-$experimental-support-for-svg: true;
-$legacy-support-for-ie7: true;
-$legacy-support-for-ie8: true;
-
-@mixin background-with-css2-fallback($background-1, $background-2: false, $background-3: false, $background-4: false) {
-	$backgrounds: compact($background-1, $background-2, $background-3, $background-4);
-	$mult-bgs: -compass-list-size($backgrounds) > 1;
-	$simple-background: if($mult-bgs or prefixed(-css2, $backgrounds), -css2(-compass-nth($backgrounds, first)), false);
-	@include background($background-1, $background-2, $background-3, $background-4);
-	@if not blank($simple-background) {
-		background: $simple-background;
-	}
+@mixin letterpress($opacity){
+    text-shadow: white($opacity) 0 1px 0;
 }
 
-// Disable user selection on elements;
-@mixin no-user-select {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
+@mixin animation-delay($delay: 0s) {
+	-moz-animation-delay: $delay;
+	-webkit-animation-delay: $delay;
+	animation-delay: $delay;
 }
 
-// dynamic sprite
-@import "sprite/*.png";
+@mixin animation-settings($animation: spin, $duration: 2s, $timing-function: ease-in-out, $iteration-count: infinite, $direction: alternate, $fill-mode: forwards) {
+	-moz-animation: $animation;
+	-moz-animation-duration: $duration;
+	-moz-animation-timing-function: $timing-function;
+	-moz-animation-iteration-count: $iteration-count;
+	-moz-animation-direction: $direction;
+	-moz-animation-fill-mode: $fill-mode;	
 
-$sprite: sprite-map("sprite/*.png", $spacing: 13);
-$sprite-background: sprite-url($sprite);
+	-webkit-animation: $animation;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-timing-function: $timing-function;
+	-webkit-animation-iteration-count: $iteration-count;
+	-webkit-animation-direction: $direction;
+	-webkit-animation-fill-mode: $fill-mode;
 
-@mixin sprite-background-image($selector, $setWidth: false, $offset-x: 0, $offset-y: 0, $setHeight: false) {
-	background-image: $sprite-background;
-	background-position: sprite-position($sprite, $selector, $offset-x, $offset-y);
-	background-repeat: no-repeat;
-	@if $setHeight {
-		height: image-height(sprite-file($sprite, $selector));
-	}
-	@if $setWidth {
-		width: image-width(sprite-file($sprite, $selector));
-	}
-}
-
-@mixin sprite-background-position($selector, $offset-x: 0, $offset-y: 0) {
-	background-position: sprite-position($sprite, $selector, $offset-x, $offset-y);
+	animation: $animation;
+	animation-duration: $duration;
+	animation-timing-function: $timing-function;
+	animation-iteration-count: $iteration-count;
+	animation-direction: $direction;
+	animation-fill-mode: $fill-mode;
 }
 
