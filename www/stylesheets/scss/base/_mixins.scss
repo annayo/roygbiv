@@ -12,10 +12,10 @@
     background: rgba($color, $opacity);
 }
 
-@mixin transition($property: all, $delay: 500ms, $timing-function: ease-in-out) {
-	-moz-transition: $property $delay $timing-function;
-	-webkit-transition: $property $delay $timing-function;
-	transition: $property $delay $timing-function;
+@mixin transition($property: all, $duration: 500ms, $timing-function: ease-in-out) {
+	-moz-transition: $property $duration $timing-function;
+	-webkit-transition: $property $duration $timing-function;
+	transition: $property $duration $timing-function;
 }
 
 @mixin animation-delay($delay: 0s) {

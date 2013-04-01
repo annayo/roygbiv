@@ -6,7 +6,7 @@
 // Variables
 $black: rgb(0, 0, 0);
 $darkGrey: lighten($black, 20%);
-$mediumGrey: lighten($black, 50%);
+$mediumGrey: lighten($black, 40%);
 $lightGrey: lighten($black, 75%);
 $pageWidth: 960px;
 
@@ -15,9 +15,10 @@ body {
 }
 
 #main {
+	font-family: 'Racing Sans One', cursive;
+
 	h1 {
 		color: $darkGrey;
-		font-family: 'Racing Sans One', cursive;
 		font-size: 6em;
 		letter-spacing: -7px;
 		margin-bottom: 15px;
@@ -26,6 +27,17 @@ body {
 	}
 
 	.cta {
+		color: $darkGrey;
+		cursor: pointer;
+		display: none;
+		font-size: 2em;
+		font-weight: bold;
+		margin: 30px 0;
 		text-align: center;
+		@include transition($property: color, $duration: 100ms);
+
+		&:hover {
+			color: #Ce31Ce;
+		}
 	}
 }
