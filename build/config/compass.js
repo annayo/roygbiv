@@ -29,6 +29,7 @@ module.exports = function(config) {
 			'imagesDir': config.images,
 			'force': true,
 			'noLineComments': true,
+			'debugInfo': false,
 			'outputStyle': 'expanded',
 			'relativeAssets': true
 		}
