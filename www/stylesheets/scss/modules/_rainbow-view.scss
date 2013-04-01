@@ -32,13 +32,7 @@
 		position: absolute;
 		left: inherit;
 		top: inherit;	
-
-		-webkit-animation: spin;
-		-webkit-animation-duration: 2s;
-		-webkit-animation-timing-function: ease-in-out;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-direction: alternate;
-		-webkit-animation-fill-mode: forwards;		
+		@include animation-settings;
 	}
 
 	.red {
@@ -50,7 +44,7 @@
 			height: 500px;
 			width: 500px;
 			clip: rect(0px, 580px, 290px, 0px);
-			-webkit-animation-delay: 0s;
+			@include animation-delay;
 		}
 	}
 
@@ -63,7 +57,7 @@
 			height: 420px;
 			width: 420px;
 			clip: rect(0px, 500px, 250px, 0px);
-			-webkit-animation-delay: 1s;
+			@include animation-delay(1s);
 		}
 	}
 
@@ -76,7 +70,7 @@
 			height: 340px;
 			width: 340px; 
 			clip: rect(0px, 420px, 210px, 0px);
-			-webkit-animation-delay: 2s;
+			@include animation-delay(2s);
 		}	
 	}
 
@@ -89,7 +83,7 @@
 			height: 260px;
 			width: 260px;
 			clip: rect(0px, 340px, 170px, 0px);
-			-webkit-animation-delay: 3s;
+			@include animation-delay(3s);
 		}
 	}
 
@@ -102,7 +96,7 @@
 			height: 180px;
 			width: 180px;
 			clip: rect(0px, 260px, 130px, 0px);
-			-webkit-animation-delay: 4s;
+			@include animation-delay(4s);
 		}	
 	}
 
@@ -115,7 +109,7 @@
 			height: 100px;
 			width: 100px;
 			clip: rect(0px, 180px, 90px, 0px);
-			-webkit-animation-delay: 5s;
+			@include animation-delay(5s);
 		}
 	}
 
@@ -128,7 +122,7 @@
 			height: 20px;
 			width: 20px; 
 			clip: rect(0px, 100px, 50px, 0px);
-			-webkit-animation-delay: 6s;
+			@include animation-delay(6s);
 		}
 	}
 }
