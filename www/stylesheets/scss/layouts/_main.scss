@@ -11,31 +11,17 @@ $lightGrey: lighten($black, 75%);
 $pageWidth: 960px;
 
 body {
-	background: $lightGrey;
+	background: #DFFAFF;
 }
 
 #main {
-	overflow: auto;
-	position: relative;
-
 	h1 {
 		color: $darkGrey;
-		font: bold 250% / 200% helvetica, arial, sans-serif;
+		font-family: 'Racing Sans One', cursive;
+		font-size: 6em;
+		letter-spacing: -7px;
 		margin-bottom: 15px;
-		text-align: center
+		text-align: center;
+		@include letterpress(0.8);
 	}
 }
-
-#fork-me {
-	@include sprite-background-image("forkme", $setHeight: true, $setWidth: true);
-	border: 0;
-	display: block;
-	position: absolute;
-	right: 0;
-	text-indent: -9999px;
-	top: 0;
-	&:hover {
-		@include sprite-background-position("forkme-hover");
-	}
-}
-
