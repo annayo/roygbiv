@@ -1,8 +1,4 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/sprite\/\*\.png}line{font-family:\0000350}}
-.sprite-sprite {
-  background: url('../../images/sprite-s268e2e2923.png') no-repeat;
-}
-
+@import "http://fonts.googleapis.com/css?family=Racing+Sans+One";
 @media screen {
   /* http://meyerweb.com/eric/tools/css/reset/ 
      v2.0 | 20110126
@@ -117,51 +113,204 @@
   25	189
   26	197
   */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_example\.scss}line{font-family:\0000313}}
-  body {
-    background: #333333;
-    min-width: 960px;
-  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_example\.scss}line{font-family:\0000318}}
-  #main {
-    overflow: auto;
-    position: relative;
-  }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_example\.scss}line{font-family:\0000323}}
-  #content {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000315}}
+  #rainbow {
+    height: 285px;
+    overflow: hidden;
     margin: 0 auto;
-    width: 960px;
+    position: relative;
+    width: 580px;
+    -moz-transition: height 500ms ease-in-out;
+    -webkit-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_example\.scss}line{font-family:\0000326}}
-  #content h1 {
-    color: #bfbfbf;
-    font: bold 250%/200% helvetica, arial, sans-serif;
-    margin-top: 100px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000323}}
+  #rainbow.reveal {
+    height: 580px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_example\.scss}line{font-family:\0000331}}
-  #content p {
-    color: gray;
-    font-size: 180%;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_example\.scss}line{font-family:\0000337}}
-  #fork-me {
-    background-image: url('../../images/sprite-s6e325fb89d.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    height: 149px;
-    width: 149px;
-    border: 0;
-    display: block;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000327}}
+  #rainbow li {
     position: absolute;
-    right: 0;
+    height: 100%;
     text-indent: -9999px;
+    opacity: 0.8;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000333}}
+  #rainbow .ribbon {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 40px;
+    position: absolute;
+    left: inherit;
+    top: inherit;
+    -moz-animation: spin;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation: spin;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation: spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000343}}
+  #rainbow .red {
+    left: 0;
     top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_example\.scss}line{font-family:\0000345}}
-  #fork-me:hover {
-    background-position: 0 -162px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000347}}
+  #rainbow .red .ribbon {
+    border-color: red;
+    height: 500px;
+    width: 500px;
+    clip: rect(0px, 580px, 290px, 0px);
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000356}}
+  #rainbow .orange {
+    left: 20px;
+    top: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000360}}
+  #rainbow .orange .ribbon {
+    border-color: orange;
+    height: 420px;
+    width: 420px;
+    clip: rect(0px, 500px, 250px, 0px);
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000369}}
+  #rainbow .yellow {
+    left: 40px;
+    top: 40px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000373}}
+  #rainbow .yellow .ribbon {
+    border-color: yellow;
+    height: 340px;
+    width: 340px;
+    clip: rect(0px, 420px, 210px, 0px);
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000382}}
+  #rainbow .green {
+    left: 60px;
+    top: 60px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000386}}
+  #rainbow .green .ribbon {
+    border-color: green;
+    height: 260px;
+    width: 260px;
+    clip: rect(0px, 340px, 170px, 0px);
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000395}}
+  #rainbow .blue {
+    left: 80px;
+    top: 80px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\0000399}}
+  #rainbow .blue .ribbon {
+    border-color: blue;
+    height: 180px;
+    width: 180px;
+    clip: rect(0px, 260px, 130px, 0px);
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003108}}
+  #rainbow .indigo {
+    left: 100px;
+    top: 100px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003112}}
+  #rainbow .indigo .ribbon {
+    border-color: indigo;
+    height: 100px;
+    width: 100px;
+    clip: rect(0px, 180px, 90px, 0px);
+    -moz-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003121}}
+  #rainbow .violet {
+    left: 120px;
+    top: 120px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/modules\/_rainbow-view\.scss}line{font-family:\00003125}}
+  #rainbow .violet .ribbon {
+    border-color: violet;
+    height: 20px;
+    width: 20px;
+    clip: rect(0px, 100px, 50px, 0px);
+    -moz-animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_main\.scss}line{font-family:\0000313}}
+  body {
+    background: #DFFAFF;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_main\.scss}line{font-family:\0000317}}
+  #main {
+    font-family: "Racing Sans One", cursive;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_main\.scss}line{font-family:\0000320}}
+  #main h1 {
+    color: #333333;
+    font-size: 6em;
+    letter-spacing: -7px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: white(0.8) 0 1px 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_main\.scss}line{font-family:\0000329}}
+  #main .cta {
+    color: #333333;
+    cursor: pointer;
+    display: none;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+    -moz-transition: color 100ms ease-in-out;
+    -webkit-transition: color 100ms ease-in-out;
+    transition: color 100ms ease-in-out;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/annayh\/Sites\/roygbiv\/www\/stylesheets\/scss\/layouts\/_main\.scss}line{font-family:\0000339}}
+  #main .cta:hover {
+    color: #Ce31Ce;
   }
 }
