@@ -13,10 +13,10 @@
 	@import "base/reset";
 
 	// Section Modules
-	@import "modules/example-view";
-	
+	@import "modules/rainbow-view";
+
 	// Layouts
-	@import "layouts/example";
+	@import "layouts/main"
 }
 
 @media print {

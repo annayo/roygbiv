@@ -11,26 +11,18 @@ $lightGrey: lighten($black, 75%);
 $pageWidth: 960px;
 
 body {
-	background: $darkGrey;
-	min-width: $pageWidth;
+	background: $lightGrey;
 }
 
 #main {
 	overflow: auto;
 	position: relative;
-}
 
-#content {
-	margin: 0 auto;
-	width: $pageWidth;
 	h1 {
-		color: $lightGrey;
+		color: $darkGrey;
 		font: bold 250% / 200% helvetica, arial, sans-serif;
-		margin-top: 100px;
-	}
-	p {
-		color: $mediumGrey;
-		font-size: 180%;
+		margin-bottom: 15px;
+		text-align: center
 	}
 }
 
